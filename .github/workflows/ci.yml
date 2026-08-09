@@ -45,3 +45,9 @@ jobs:
       - name: Verify with Maven Wrapper
         shell: bash
         run: ./mvnw --batch-mode --no-transfer-progress clean verify
+
+      - name: Package runtime image
+        shell: bash
+        run: |
+          platform="$(printf '%s-%s' "$RUNNER_OS" "$RUNNER_ARCH" | tr '[:upper:]' '[:lower:]')"
+          ./scripts/package-runtime.sh "$platform"
