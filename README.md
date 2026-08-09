@@ -9,9 +9,9 @@ official logos or circuit geometry.
 
 ## Current status
 
-Version 0.1.0 is the first public preview. The application and tests are usable,
-but native installers and their signing workflows are not yet part of the
-release.
+Version 0.1.1 is the current public preview. The application, tests and portable
+runtime images are usable, but native installers and their platform-signing
+workflows are not yet part of the release.
 
 ## Requirements
 

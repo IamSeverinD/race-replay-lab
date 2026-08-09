@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-08-09
+
 ### Added
 
 - Cross-platform runtime-image packaging in CI and for release tags.
@@ -33,5 +35,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - External API data and application caches stay outside the repository.
 - Failed or cancelled imports cannot replace the active replay.
 
-[Unreleased]: https://github.com/IamSeverinD/race-replay-lab/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/IamSeverinD/race-replay-lab/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/IamSeverinD/race-replay-lab/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/IamSeverinD/race-replay-lab/releases/tag/v0.1.0
