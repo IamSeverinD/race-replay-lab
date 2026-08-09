@@ -31,4 +31,20 @@ if [ -n "$forbidden_references" ]; then
     exit 1
 fi
 
+unpinned_actions=""
+
+if [ -d .github/workflows ]; then
+    unpinned_actions="$(
+        grep -R -n -E 'uses:[[:space:]]+[^[:space:]]+@' .github/workflows \
+            | grep -v -E '@[0-9a-f]{40}([[:space:]]|$)' \
+            || true
+    )"
+fi
+
+if [ -n "$unpinned_actions" ]; then
+    echo "GitHub Actions must be pinned to full commit SHAs:" >&2
+    printf '%s\n' "$unpinned_actions" >&2
+    exit 1
+fi
+
 echo "Publication safety checks passed."

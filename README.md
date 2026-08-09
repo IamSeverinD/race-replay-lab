@@ -65,8 +65,22 @@ JaCoCo report. The coverage report is written to
 Create a self-contained runtime image for the current operating system:
 
 ```bash
-./mvnw javafx:jlink
+./scripts/package-runtime.sh
 ```
+
+The platform-specific ZIP archive is written to `target/`. Release tags are
+packaged automatically on Linux, macOS and Windows. Each GitHub Release asset
+includes a matching SHA-256 checksum and a signed build-provenance attestation.
+
+Verify a downloaded checksum with `sha256sum -c <archive>.sha256` on Linux,
+or `shasum -a 256 -c <archive>.sha256` on macOS. Provenance can be verified
+with the GitHub CLI:
+
+```bash
+gh attestation verify <archive> --repo IamSeverinD/race-replay-lab
+```
+
+These are portable runtime images, not signed native installers.
 
 ## Project structure
 

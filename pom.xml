@@ -53,6 +53,7 @@
         <java.version>25</java.version>
         <maven.compiler.release>${java.version}</maven.compiler.release>
         <maven.compiler.parameters>true</maven.compiler.parameters>
+        <jlink.platform>local</jlink.platform>
 
         <javafx.version>26.0.2</javafx.version>
         <jackson.version>2.22.1</jackson.version>
@@ -208,7 +209,7 @@
                     <launcher>race-replay-lab</launcher>
                     <jlinkImageName>race-replay-lab-runtime</jlinkImageName>
                     <jlinkZipName>
-                        race-replay-lab-runtime-macos-aarch64
+                        race-replay-lab-runtime-${jlink.platform}
                     </jlinkZipName>
                 </configuration>
             </plugin>
