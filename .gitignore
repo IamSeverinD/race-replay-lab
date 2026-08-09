@@ -1,0 +1,74 @@
+# Maven
+target/
+
+# Java
+*.class
+*.jar
+*.jmod
+hs_err_pid*
+replay_pid*
+
+# Runtime and packaging output
+dist/
+runtime/
+packages/
+*.dmg
+*.pkg
+*.msi
+*.exe
+*.deb
+*.rpm
+*.app/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Visual Studio Code
+.vscode/
+.project
+.classpath
+.settings/
+
+# Eclipse and NetBeans
+bin/
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Local external data and caches
+data/cache/*
+data/raw/*
+/cache/
+telemetry-cache/
+
+# Never bundle third-party race data in the public source tree
+src/main/resources/**/bundled/openf1/
+
+# Keep empty data directories in Git
+!data/cache/.gitkeep
+!data/raw/.gitkeep
+
+# Local environment configuration
+.env
+.env.*
+!.env.example

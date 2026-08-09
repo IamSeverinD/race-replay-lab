@@ -1,0 +1,189 @@
+.timing-sidebar {
+    -fx-background-color: #0d1218;
+    -fx-background-insets: 0;
+    -fx-border-color: #2a333e transparent transparent #2a333e;
+    -fx-border-width: 1 0 0 1;
+    -fx-padding: 0;
+}
+
+.timing-sidebar > .viewport,
+.timing-sidebar > .corner,
+.timing-sidebar-content {
+    -fx-background-color: #0d1218;
+}
+
+.timing-sidebar > .scroll-bar:vertical {
+    -fx-background-color: #0c1117;
+    -fx-pref-width: 9px;
+}
+
+.timing-sidebar > .scroll-bar:vertical .thumb {
+    -fx-background-color: #3a4654;
+    -fx-background-radius: 999;
+}
+
+.timing-sidebar > .scroll-bar:vertical .increment-button,
+.timing-sidebar > .scroll-bar:vertical .decrement-button {
+    -fx-pref-height: 0;
+    -fx-opacity: 0;
+}
+
+.timing-card {
+    -fx-background-color: #141a21;
+    -fx-background-radius: 8;
+    -fx-border-color: #28313c;
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+    -fx-padding: 14;
+}
+
+.section-overline,
+.metric-name,
+.telemetry-name {
+    -fx-font-size: 10px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #778392;
+}
+
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #f4f7fa;
+}
+
+.live-badge {
+    -fx-background-color: rgba(39, 244, 210, 0.12);
+    -fx-background-radius: 999;
+    -fx-border-color: rgba(39, 244, 210, 0.35);
+    -fx-border-radius: 999;
+    -fx-border-width: 1;
+    -fx-font-family: monospace;
+    -fx-font-size: 10px;
+    -fx-font-weight: 800;
+    -fx-padding: 5 9 5 9;
+    -fx-text-fill: #27f4d2;
+}
+
+.selected-driver-name {
+    -fx-font-family: monospace;
+    -fx-font-size: 20px;
+    -fx-font-weight: 900;
+    -fx-padding: 7 0 0 0;
+    -fx-text-fill: #ffffff;
+}
+
+.metric-tile {
+    -fx-background-color: #0e141a;
+    -fx-background-radius: 6;
+    -fx-border-color: #293440;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+    -fx-padding: 10 12 10 12;
+}
+
+.metric-value {
+    -fx-font-family: monospace;
+    -fx-font-size: 18px;
+    -fx-font-weight: 900;
+    -fx-text-fill: #ffffff;
+}
+
+.telemetry-name {
+    -fx-min-width: 88px;
+}
+
+.telemetry-value {
+    -fx-font-family: monospace;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #e8edf2;
+}
+
+.timing-divider .line {
+    -fx-border-color: #2a333e transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+.live-timing-table {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-control-inner-background: #10161d;
+    -fx-control-inner-background-alt: #121920;
+    -fx-padding: 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.live-timing-table .column-header-background {
+    -fx-background-color: #0c1117;
+    -fx-background-radius: 5 5 0 0;
+    -fx-border-color: transparent transparent #2a333e transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+.live-timing-table .column-header,
+.live-timing-table .filler {
+    -fx-background-color: transparent;
+    -fx-size: 30px;
+}
+
+.live-timing-table .column-header .label {
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-size: 9px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #718092;
+}
+
+.live-timing-table .table-row-cell {
+    -fx-background-color: #10161d;
+    -fx-border-color: transparent transparent #202934 transparent;
+    -fx-border-width: 0 0 1 0;
+    -fx-table-cell-border-color: transparent;
+}
+
+.live-timing-table .table-row-cell:odd {
+    -fx-background-color: #121920;
+}
+
+.live-timing-table .table-row-cell:filled:hover {
+    -fx-background-color: #1a232d;
+}
+
+.live-timing-table .table-row-cell:filled:selected {
+    -fx-background-color: #253241;
+}
+
+.live-timing-table .table-cell {
+    -fx-alignment: CENTER-LEFT;
+    -fx-border-color: transparent;
+    -fx-font-family: monospace;
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+    -fx-padding: 0 7 0 7;
+    -fx-text-fill: #dce3ea;
+}
+
+.live-timing-table .table-row-cell:filled:selected .table-cell {
+    -fx-text-fill: #ffffff;
+}
+
+.live-timing-table .placeholder .label {
+    -fx-font-size: 11px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #65707e;
+}
+
+.live-timing-table .scroll-bar:vertical {
+    -fx-background-color: #0c1117;
+    -fx-pref-width: 8px;
+}
+
+.live-timing-table .scroll-bar:vertical .thumb {
+    -fx-background-color: #3a4654;
+    -fx-background-radius: 999;
+}
+
+.live-timing-table .scroll-bar:vertical .increment-button,
+.live-timing-table .scroll-bar:vertical .decrement-button {
+    -fx-pref-height: 0;
+    -fx-opacity: 0;
+}
